@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --backColor : #e4e7ed;
+    --textColor : #000;
+    --secondaryTextColor : #fff;
+    --goodColor : #728aef;
+    --badColor : #f08a95;
+    --middleGradient : #CE68F5;
+    --shallowColor : #808484;
+    --headingFont : "Roboto", serif;
+    --textFont : "Inter", sans-serif;
+}
+
+body 
+{
+    min-height: 100vh;
+    background-color: var(--backColor);
+}
+
+.header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 0px 15px;
+    margin-bottom: 60px;
+}
+
+.header h2 
+{
+    font-family: var(--headingFont);
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.header .navigation ul 
+{
+    list-style: none;
+}
+
+.start-btn 
+{
+    display: inline-block;
+    font-family: var(--textFont);
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    color: var(--secondaryTextColor);
+    background: linear-gradient(to right, var(--goodColor), var(--middleGradient), var(--badColor));
+    width: 100px;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+.start-btn:hover 
+{
+    background: linear-gradient(to left, var(--goodColor), var(--middleGradient), var(--badColor));
+}
+
+.content .intro 
+{
+    text-align: center;
+}
+
+.content .intro h3 
+{
+    font-family: var(--headingFont);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.content .intro p 
+{
+    font-family: var(--textFont);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 0px 15px 0px 15px;
+    color: var(--shallowColor);
+}
+
+.content .income,
+.content .expense
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 15px 0px 15px;
+}
+
+.content .income section h3,
+.content .expense section h3 
+{
+
+    font-family: var(--headingFont);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.content .expense section h3  
+{
+    text-align: right;
+}
+
+.content .income section p,
+.content .expense section p 
+{
+    font-family: var(--textFont);
+    color: var(--shallowColor);
+    font-size: 16px;
+} 
+
+.content .income section p 
+{
+    text-align: left;
+}
+
+.content .expense section p 
+{
+    text-align: right;
+}
+
+.content .income .income-logo,
+.content .expense .expense-logo 
+{
+    width: 100px;
+    background-color: var(--secondaryTextColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content .income .income-logo span,
+.content .expense .expense-logo span 
+{
+    font-size: 50px;
+    transition: all 0.7s linear;
+}
+
+.content .income .income-logo 
+{
+    margin-left: 40px;
+}
+
+.content .income .income-logo span 
+{
+    color: var(--goodColor);
+}
+
+.content .expense .expense-logo 
+{
+    margin-right: 40px;
+}
+
+.content .expense .expense-logo span 
+{
+    color: var(--badColor);
+}
+
+.automate 
+{
+    margin: 60px 15px 0px 15px;
+    text-align: center;
+}
+
+.automate h3 
+{
+    font-family: var(--headingFont);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.automate p 
+{
+    font-family: var(--textFont);
+    font-size: 16px;
+    color: var(--shallowColor);
+}
+
+.content .btn-container
+{
+    margin: 60px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .income .income-logo:hover span 
+{
+    transform: translate(-20px, 15px);
+    text-shadow: 0px 5px 4px var(--textColor);
+}
+
+.content .expense .expense-logo:hover span
+{
+    transform: translate(20px, -15px);
+    text-shadow: 0px 5px 4px var(--textColor);
+}
