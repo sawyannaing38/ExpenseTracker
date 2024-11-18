@@ -1,0 +1,76 @@
+Expense Tracker
+    A website that enable user to track their expense, income and help them to achieve the finacial goal
+
+Features
+
+Feature 1 (Setting Automate Income)
+    1. User should be able to set their monthly income, the soruce of it and recived date 
+    2 Soruce of Income 
+        1. Salary 
+        2. Freelance 
+        3. Pocket Money
+    3. Everymonth when reach to the recieved date, automatically add to the amount to the user balance
+    4. User should be able to add 0 or more monhly income
+
+Algorithm for Feature 1 
+    1. When click add more button, Create another input form (amount, source, day)
+    2. When click continue button 
+        1. Check all of user input (amount, source, day)
+        2. Check all input is valid or not 
+        3. In each form div, if there is empty or invalid input warn the user 
+            1. If user click continue after warning, stores only valid input in local storage
+
+Feature 2 (Setting Automate Expense)
+    1. User should be able to set their monthly expense, the source of it and paid date 
+    2. Soruce of Expense 
+        1. Rent 
+        2. Food 
+        3. Electric Bill 
+        4. Phone Bill 
+        5. Water Bill 
+        6. Eudcation Bill 
+    3. Everymonth when reach to the recieved date, automatically remove the amount from the user balance
+    4. User should be able to add 0 or more montly expense 
+
+Feature 3 (Adding Income)
+    1. User should be able to add their income and the source of it 
+    2. Souce of Income 
+        1. Salary 
+        2. Freelance 
+        3. Pocket Money 
+        4. Bonus 
+        5. Overtime 
+    3. Add that amount to user income 
+    4. User should be able to add more than 1 income or zero
+
+Feature 4 (Adding Expense)
+    1. User should be able to add their expense and the source of it 
+    2. Souce of Expense 
+        1. Food
+        2. Clothes
+        3. Entertainment
+        4. Travel 
+        5. Gift
+        6. Grocery
+        7. Maintaince
+        8. Scanned
+        9. Unregular Condition
+        10. Alcohal
+        11. Smoke
+    3. Remove that amount from user income 
+    4. User should be able to add more than 1 expense or zero
+
+Feature 5 (Showing User montly finacial stats)
+    1. User should be able to see remaining balance, total income, total expense of current month 
+    2. User should be able to see transitions of the current month (amount, soruce, date)
+
+Feature 6 (Showing finacial stats more organized)
+    1. User should be able to see expense transiiton and income transiiton in more organized way 
+
+Feature 7 (Showing Summary)
+    1. User should be able to see total income, expense and remaining balance of each month he been using the web 
+    2. User should be able to see transiiton of each month also 
+
+Feature 8 (Profile)
+    1. User should be able to see their setting (monthy income amount, souce , recieved date also same for expense) and change it
+        

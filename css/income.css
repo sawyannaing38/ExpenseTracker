@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --backColor : #e4e7ed;
+    --textColor : #000;
+    --secondaryTextColor : #fff;
+    --goodColor : #728aef;
+    --badColor : #f08a95;
+    --middleGradient : #CE68F5;
+    --shallowColor : #808484;
+    --headingFont : "Roboto", serif;
+    --textFont : "Inter", sans-serif;
+}
+
+body 
+{
+    min-height: 100vh;
+    background-color: var(--backColor);
+}
+
+.header h2 
+{
+    font-family: var(--headingFont);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 15px 0px 15px;
+}
+
+.income
+{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.income h3
+{
+    font-family: var(--headingFont);    
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 15px 15px 20px;
+}
+
+.income-adding .amount-source 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px 15px 0px;
+}
+
+.income-adding
+{
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+    margin: auto;
+}
+
+.income-adding .amount-source > div,
+.income-adding .day-container
+{
+    width: 180px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    overflow: hidden;
+    justify-content: space-around;
+    background-color: var(--secondaryTextColor);
+    border-radius: 5px;
+}
+
+.income-adding .amount-source > div input,
+.income-adding .amount-source > div select,
+.income-adding .day-container input
+{
+    width: 80%;
+    border: none;
+    background-color: transparent;
+}
+
+.income-adding .amount-source > div input:focus,
+.income-adding .amount-source > div select:focus,
+.income-adding .day-container input:focus
+{
+    outline: none;
+}
+
+/* For most modern browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.income-adding .amount-source > div span 
+{
+    color: var(--shallowColor);
+}
+
+.income-adding .day-container span 
+{
+    color: var(--shallowColor);
+}
+
+::placeholder 
+{
+    color: var(--shallowColor);
+}
+
+.income-adding .amount-source > div select 
+{
+    color: var(--shallowColor);
+}
+
+.addMore-btn 
+{
+    display: block;
+    width: 400px;
+    margin: 30px auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+    background-color: transparent;
+    border: 1px dotted var(--textColor);
+    border-radius: 10px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.addMore-btn:hover 
+{
+    transform: scale(1.02);
+    border-style: solid;
+}
+
+.addMore-btn div 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryTextColor);
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.continue-btn,
+.continue-btn2
+{
+    cursor: pointer;
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: var(--secondaryTextColor);
+    transition: color 0.4s linear;
+    background: linear-gradient(to right, var(--goodColor), var(--middleGradient), var(--badColor))
+}
+
+.continue-btn2 
+{
+    display: none;
+}
+
+.continue-btn:hover,
+.continue-btn2:hover
+{
+    color: var(--textColor);
+}
+
+.skip 
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-family: var(--textFont);
+}
+
+.skip a 
+{
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: 600;
+}
+
+p[class^="warning"]
+{
+    font-family: var(--textFont);
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--badColor);
+}

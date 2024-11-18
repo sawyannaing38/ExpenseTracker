@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/income.css">
+    <title>Income</title>
+</head>
+<body>
+    <header class="header">
+        <h2>Expense Tracker</h2>
+    </header>
+
+    <!-- For Adding Income -->
+    <div class="income">
+        <h3>Enter Your Monthly Income and the Srouce of it</h3>
+        <div class="forms">
+            <div class="form1">
+                <div class="income-adding">
+                    <div class="amount-source">
+                        <div class="amount-container">
+                            <span class="material-symbols-outlined">
+                                paid
+                            </span>
+                            <input class="amount1" type="number" name="amount1" id="amount1" placeholder="Amount" min="0" autocomplete="off" autofocus>
+                        </div>
+                        <div class="source-container">
+                            <span class="material-symbols-outlined">
+                                crowdsource
+                            </span>
+                            <select name="source1" id="source1" class="source1">
+                                <option value="" selected disabled>Choose Source</option>
+                                <optgroup label="souce-lists">
+                                    <option value="salary">Salary</option>
+                                    <option value="freelance">Freelance</option>
+                                    <option value="pocketMoney">Pocket Money</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="day-container">
+                        <span class="material-symbols-outlined">
+                            calendar_today
+                        </span>
+                        <input type="number" class="day1" name="day1" id="day1" autocomplete="off" placeholder="Receive Day">
+                    </div>
+                </div>
+                <p class="warning1"></p>
+            </div>
+        </div>
+        <button class="addMore-btn">
+            <div>
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </div>
+            Add More
+        </button>
+        <button class="continue-btn">Continue</button>
+        <button class="continue-btn2">Continue Anyway</button>
+    </div>
+
+    <!-- For Skipping -->
+    <p class="skip"><a href="expense.html">Skip >></a></p>
+    <script src="./../js/income.js"></script>
+</body>
+</html>
