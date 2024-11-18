@@ -65,7 +65,8 @@ continueBtn.addEventListener("click", function()
         const data = {
             "amount" : Number(amount),
             "source" : source,
-            "day" : Number(day)
+            "day" : Number(day),
+            "type" : "income"
         };
 
         monthyIncomeLists.push(data);

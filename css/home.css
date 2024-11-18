@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --backColor : #e4e7ed;
+    --textColor : #000;
+    --secondaryTextColor : #fff;
+    --goodColor : #728aef;
+    --badColor : #f08a95;
+    --middleGradient : #CE68F5;
+    --shallowColor : #808484;
+    --headingFont : "Roboto", serif;
+    --textFont : "Inter", sans-serif;
+}
+
+body 
+{
+    min-height: 100vh;
+    background-color: var(--backColor);
+}
+
+.header 
+{
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 
+{
+    font-family: var(--headingFont);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header .navigation ul 
+{
+    list-style: none;
+}
+
+.header .navigation ul li a 
+{
+    padding: 5px;
+    background-color: var(--secondaryTextColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.balance 
+{
+    border-radius: 10px;
+    width: 400px;
+    margin: 50px auto 20px;
+    background: linear-gradient(to top left, var(--goodColor), var(--middleGradient), var(--badColor));
+    box-shadow: 0px 4px 10px 0px var(--shallowColor);
+}
+
+.balance .total 
+{
+    text-align: center;
+    color: var(--secondaryTextColor);
+    font-family: var(--textFont);
+    margin: 30px 0px;
+}
+
+.balance .total h5 
+{
+    font-size: 10px;
+    padding: 10px 0px;
+    font-weight:600;
+}
+
+.balance .total .total-amount 
+{
+    font-size: 28px;
+}
+
+.usage 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usage > div 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px 20px;
+}
+
+.usage .income 
+{
+    margin-left: 15px;
+}
+
+.usage .expense 
+{
+    margin-right: 15px;
+}
+
+.usage .income-icon,
+.usage .expense-icon 
+{
+    background-color: var(--secondaryTextColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.usage .income-icon span 
+{
+    color: var(--goodColor);
+}
+
+.usage .expense-icon span 
+{
+    color: var(--badColor);
+}
+
+.usage .expense-detail,
+.usage .income-detail 
+{
+    color: var(--secondaryTextColor);
+    font-family: var(--textFont);
+}
+
+.usage .expense-detail h5,
+.usage .income-detail h5
+{
+    font-size: 14px;
+}
+
+.usage .expense-detail span,
+.usage .income-detail span 
+{
+    font-size: 12px;
+}
+
+.transitions-header 
+{
+    display: flex;
+    width: 400px;
+    margin: 30px auto 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transitions-header h4 
+{
+    font-family: var(--textFont);
+    font-size: 14px;
+    color: var(--shallowColor);
+}
+
+.transitions-header a 
+{
+    text-decoration: none;
+    font-family: var(--textFont);
+    font-size: 14px;
+}
+
+.transition-lists 
+{
+    width: 400px;
+    margin: 20px auto;
+}
+
+.transition-lists .transition 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondaryTextColor);
+    padding: 10px 0px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 10px 0px var(--shallowColor);
+    border-radius: 10px;
+}
+
+.transition-lists .transition div:first-child
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.transition-lists .transition div:first-child .transition-icon 
+{
+    padding: 5px 10px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.transition-lists .good div:first-child .transition-icon 
+{
+    background-color: var(--goodColor);
+}
+
+.transition-lists .bad div:first-child .transition-icon 
+{
+    background-color: var(--badColor);
+}
+
+.transition-icon span 
+{
+    color: var(--secondaryTextColor);
+    font-size: 20px;
+}
+
+.transition .transition-source 
+{
+    font-family: var(--textFont);
+    font-size: 12px;
+}
+
+.good .transition-source
+{
+    color: var(--goodColor);
+}
+
+.bad .transition-source
+{
+    color: var(--badColor);
+}
+
+.transition div:nth-child(2)
+{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-right: 15px;
+    font-family: var(--textFont);
+}
+
+.transition div:nth-child(2) span:first-child
+{
+    font-size: 12px;
+}
+
+.transition div:nth-child(2) span:nth-child(2)
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer 
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondaryTextColor);
+    border-radius: 30px 30px 0px 0px;
+    padding: 15px 0px;
+}
+
+footer .footer-navigation 
+{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-navigation li a 
+{
+    padding: 0px 10px;
+}
+
+footer .footer-navigation li a span 
+{
+    font-size: 30px;
+    color: var(--textColor);
+    transition: all 0.4s linear;
+}
+
+footer .footer-navigation li a span:hover 
+{
+    color: var(--goodColor);
+}
+
+footer .footer-navigation li a.add-icon span 
+{
+    font-size: 50px;
+    color: var(--secondaryTextColor);
+    transition: all 0.4s linear;
+}
+
+footer .footer-navigation li a.add-icon span:hover 
+{
+    transform: scale(1.2);
+}
+
+footer .footer-navigation li a.add-icon 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    background: linear-gradient(var(--goodColor), var(--middleGradient), var(--badColor));
+}
+
+.warning 
+{
+    font-family: var(--textFont);
+    text-align: center;
+    background-color: var(--middleGradient);
+    padding: 10px;
+    color: var(--secondaryTextColor);
+}

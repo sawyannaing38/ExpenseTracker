@@ -64,6 +64,14 @@ Feature 5 (Showing User montly finacial stats)
     1. User should be able to see remaining balance, total income, total expense of current month 
     2. User should be able to see transitions of the current month (amount, soruce, date)
 
+Algorithm for Feature 5 
+    1. After dom content finished loading
+    2. Get monthlyTransitions from local storage 
+    3. if doesn't exists all balance,income and expense should be 0 and no transitions 
+    4. else 
+        1. calculate remain balance, income, expense
+        2. Show transitions for today
+
 Feature 6 (Showing finacial stats more organized)
     1. User should be able to see expense transiiton and income transiiton in more organized way 
 
